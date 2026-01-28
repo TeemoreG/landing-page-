@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartOption Media | Business Automation Systems Agency</title>
     <!-- GoHighLevel Tracking Script -->
-    <!-- <script src="https://cdn.gohighlevel.com/site/tracking.js" data-gohighlevel-id="YOUR_ID"></script> -->
+    <script src="https://cdn.gohighlevel.com/site/tracking.js" data-gohighlevel-id="UUXvP6YqliyB4GOASV9w"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -504,9 +504,10 @@
             background: white;
             border-radius: var(--radius);
             border: 1px solid var(--gray-light);
+            color: var(--dark);
         }
 
-        /* CTA Section */
+        /* CTA Section - Updated Styles */
         .cta-section {
             padding: 120px 0;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -526,6 +527,19 @@
             flex-wrap: wrap;
         }
 
+        /* WhatsApp Button Styles */
+        .whatsapp-btn {
+            background: white !important;
+            color: #000000 !important;
+            border: 2px solid white !important;
+            font-weight: 600 !important;
+        }
+
+        .whatsapp-btn:hover {
+            background: rgba(255, 255, 255, 0.9) !important;
+            color: #000000 !important;
+        }
+
         /* Footer */
         footer {
             background: var(--darker);
@@ -541,7 +555,6 @@
         }
 
         .footer-logo {
-            filter: brightness(0) invert(1);
             height: 40px;
             margin-bottom: 24px;
         }
@@ -625,6 +638,7 @@
 
             .contact-info {
                 flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -956,59 +970,78 @@
         </div>
     </section>
 
-<!-- CTA -->
-<section class="cta-section" id="contact">
-    <div class="container">
-        <h2>Ready to automate your business?</h2>
-        <p style="max-width: 600px; margin: 24px auto; font-size: 1.125rem;">
-            Book a free demo walkthrough and see exactly how our systems can work for your specific business.
-        </p>
-        
-        <!-- Contact Information - UPDATED FOR BETTER VISIBILITY -->
-        <div class="contact-info" style="justify-content: center;">
-            <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
-                <span style="font-size: 20px;">🇬🇧</span>
-                <div>
-                    <div style="font-weight: 600; color: #000000;">UK Number</div>
-                    <div style="color: #333333; font-weight: 500;">+44 7535 272927</div>
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to automate your business?</h2>
+            <p style="max-width: 600px; margin: 24px auto; font-size: 1.125rem;">
+                Book a free demo walkthrough and see exactly how our systems can work for your specific business.
+            </p>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
+                    <span style="font-size: 20px;">🇬🇧</span>
+                    <div>
+                        <div style="font-weight: 600; color: #000000;">UK Number</div>
+                        <div style="color: #333333; font-weight: 500;">+44 7535 272927</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
+                    <span style="font-size: 20px;">🇰🇪</span>
+                    <div>
+                        <div style="font-weight: 600; color: #000000;">Kenya Number</div>
+                        <div style="color: #333333; font-weight: 500;">+254 740 940395</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
+                    <span style="font-size: 20px;">✉️</span>
+                    <div>
+                        <div style="font-weight: 600; color: #000000;">Email</div>
+                        <div style="color: #333333; font-weight: 500;">info@smartoptionmedia.com</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
-                <span style="font-size: 20px;">🇰🇪</span>
-                <div>
-                    <div style="font-weight: 600; color: #000000;">Kenya Number</div>
-                    <div style="color: #333333; font-weight: 500;">+254 740 940395</div>
-                </div>
+            <div class="cta-buttons">
+                <!-- GHL Form Integration Point -->
+                <a href="#" class="btn btn-primary" onclick="document.getElementById('ghl-form-container').style.display='block'; return false;">📅 Book Free Demo</a>
+                <a href="https://wa.me/447535272927" class="btn whatsapp-btn">💬 WhatsApp UK</a>
+                <a href="https://wa.me/254740940395" class="btn whatsapp-btn">💬 WhatsApp Kenya</a>
             </div>
             
-            <div class="contact-item" style="background: white; border: 2px solid rgba(255,255,255,0.3);">
-                <span style="font-size: 20px;">✉️</span>
-                <div>
-                    <div style="font-weight: 600; color: #000000;">Email</div>
-                    <div style="color: #333333; font-weight: 500;">info@smartoptionmedia.com</div>
-                </div>
+            <!-- GHL Form Container (Hidden by default) -->
+            <div id="ghl-form-container" style="display: none; margin-top: 40px;">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/UUXvP6YqliyB4GOASV9w"
+                    style="width:100%;max-width:600px;height:674px;border:none;border-radius:4px;margin:0 auto;"
+                    id="inline-UUXvP6YqliyB4GOASV9w" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-activation-type="alwaysActivated"
+                    data-form-name="Book Free Demo"
+                    data-height="674"
+                    data-layout-iframe-id="inline-UUXvP6YqliyB4GOASV9w"
+                    data-form-id="UUXvP6YqliyB4GOASV9w"
+                    title="Book Free Demo">
+                </iframe>
+                <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
+            
+            <p style="margin-top: 40px; font-size: 0.875rem; opacity: 0.9;">
+                London UK • Serving Worldwide • No Long-Term Contracts Required
+            </p>
         </div>
-        
-        <div class="cta-buttons">
-            <a href="#" class="btn btn-primary">📅 Book Free Demo</a>
-            <a href="https://wa.me/447535272927" class="btn" style="background: white; color: #000000; border: 2px solid white; font-weight: 600;">💬 WhatsApp UK</a>
-            <a href="https://wa.me/254740940395" class="btn" style="background: white; color: #000000; border: 2px solid white; font-weight: 600;">💬 WhatsApp Kenya</a>
-        </div>
-        <p style="margin-top: 40px; font-size: 0.875rem; opacity: 0.9;">
-            London UK • Serving Worldwide • No Long-Term Contracts Required
-        </p>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <!-- Alternative: Keep some inversion but make it visible -->
-<img src="https://i.ibb.co/mCch5TtN/smartoptionmedia-logo.webp" alt="SmartOption Media" style="height: 40px; margin-bottom: 24px; filter: invert(0.8) brightness(1.5);">
+                    <img src="https://i.ibb.co/mCch5TtN/smartoptionmedia-logo.webp" alt="SmartOption Media" class="footer-logo">
                     <p style="color: #94a3b8; margin-bottom: 24px;">
                         Business automation systems agency. We install systems that capture customers, respond faster, and grow your business 24/7.
                     </p>
@@ -1106,9 +1139,15 @@
             }
         });
         
-        // Add GoHighLevel tracking here
-        // Replace with your actual GHL script: 
-        // <script src="https://cdn.gohighlevel.com/site/tracking.js" data-gohighlevel-id="YOUR_ID"></script>
+        // Close GHL form when clicking outside
+        document.addEventListener('click', (e) => {
+            const formContainer = document.getElementById('ghl-form-container');
+            if (formContainer && formContainer.style.display === 'block' && 
+                !e.target.closest('#ghl-form-container') && 
+                !e.target.closest('.btn-primary')) {
+                formContainer.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
